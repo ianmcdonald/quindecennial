@@ -50,7 +50,7 @@ h1 {
   font-weight: 400;
   letter-spacing: -0.05em;
   font-size: 1.25em;
-  transform: rotate(90deg);
+  transform: rotate(45deg) skewX(45deg);
 }
 @keyframes spin {
   from { transform: rotate(0deg); }
