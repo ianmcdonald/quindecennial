@@ -6,5 +6,13 @@
   <link href="main.css?v=0.0.1" rel="stylesheet">
 </head>
 <body>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1089.183 1097.182"><path d="M672.949,379.911,705.5,651.967l96.717-256.36-33.5,271.942L923.981,441.785l-97.6,256.023,204.775-182.049L875.112,740.985,1117.5,613.231,912.1,794.57l265.922-66.033L935.188,855.449l274-.475L943.036,920.086,1209.185,985.2l-274-.475,242.833,126.912L912.1,1045.6l205.4,181.338L875.112,1099.187l156.039,225.225L826.376,1142.363l97.6,256.024L768.724,1172.622l33.5,271.942L705.5,1188.2,672.949,1460.26,640.394,1188.2l-96.717,256.36,33.5-271.942L421.917,1398.387l97.6-256.024L314.747,1324.412l156.039-225.225L228.394,1226.94,433.8,1045.6l-265.922,66.033L410.71,984.722l-274,.475,266.149-65.111L136.713,854.975l274,.475L167.877,728.537,433.8,794.57l-205.4-181.338L470.786,740.985,314.747,515.759,519.522,697.808l-97.6-256.023L577.175,667.549l-33.5-271.942,96.717,256.36Z" transform="translate(-128.358 -371.494)" fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="2"/></svg>
-  <h1>15 YEARS FROM (SOON)</h1>
+  <blockquote>If you like <a href="https://voyager.jpl.nasa.gov/golden-record/">the voyager golden record</a>, taking out an ad in <a href="http://tombubul.info/lsdz.html">a zine like this</a> is the exact same idea&mdash;the ad will still be in the zine when someone is improbably looking at it in some weird room <del>15 years</del> from now.</blockquote>
+  <div class="diff"></div>
+
+  <script>
+    var date1 = new Date()
+    var date2 = new Date('09/27/2034')
+    var time = date2.getTime() - date1.getTime()
+    var diff = parseInt(time / (1000 * 3600 * 24))
+    document.querySelector('.diff').textContent = diff + ' days' 
+  </script>
