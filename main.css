@@ -25,7 +25,7 @@ body {
 img {
   max-width: 100%;
   height: auto;
-  filter: blur(1.5em);
+  filter: blur(2em);
 }
 blockquote {
   line-height: 1;
@@ -78,12 +78,13 @@ section {
   width: 100%;
   text-align: center;
   padding: 5em 1em;
+  min-height: 100vh;
 }
 .lo {
   position: absolute;
   bottom: 1.5em;
   color: blue;
-  transform: rotate(45deg);
+  transform: rotate(45deg) scaleX(-1);
   right: 1em;
   font-size: 10vw;
   -webkit-text-stroke: 1px blue;

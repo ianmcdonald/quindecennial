@@ -10,13 +10,13 @@
   <div class="diff"></div>
   <section>
     <img src="low-stakes.jpg" alt="v low stakes">
-    <p class="lo">LO WST AKES</p>
+    <p class="lo">LO&nbsp;&nbsp;WST&nbsp;&nbsp;AKES</p>
   </section>
 
   <script>
     var date1 = new Date()
     var date2 = new Date('09/27/2034')
     var time = date2.getTime() - date1.getTime()
-    var diff = parseInt(time / (1000 * 3600 * 24))
+    var diff = Math.ceil(time / (1000 * 3600 * 24))
     document.querySelector('.diff').textContent = diff + ' days' 
   </script>
