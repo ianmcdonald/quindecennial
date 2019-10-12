@@ -19,8 +19,6 @@ body {
   background-color: blue;
   color: white;
   overflow-x: hidden;
-  perspective: 10vw;
-  perspective-origin: top;
 }
 img {
   max-width: 100%;
@@ -83,6 +81,8 @@ header {
   position: relative;
   min-height: 50vmin;
   height: 100vh;
+  perspective: 10vw;
+  perspective-origin: top;
 }
 .lo {
   position: absolute;
